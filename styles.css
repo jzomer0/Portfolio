@@ -1,0 +1,102 @@
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+}
+.topnav {
+  background-color: rgb(216, 216, 216);
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgb(221, 221, 221);
+  color: black;
+}
+.topnav a.active {
+  background-color: #496feb;
+  color: white;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/05/02124829/Software-Engineer.png");
+
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #c06ad1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c042cc;
+}
+
+/*contact section*/
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
